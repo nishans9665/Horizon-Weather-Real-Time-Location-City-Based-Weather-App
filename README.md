@@ -86,6 +86,11 @@ To fetch live weather data, you need an API key from **WeatherAPI**.
     
     // ... rest of the code
     ```
+---
+
+**Live Demo** - https://nishans9665.github.io/Weather_Application/
+
+---
 
 ### Example Code Snippet (Geolocation Fetch)
 
