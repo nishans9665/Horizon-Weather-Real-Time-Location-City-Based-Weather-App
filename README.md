@@ -1,180 +1,105 @@
-🌦️ Weather Forecast Web App
+# 🌦️ The Horizon Weather App
 
-A modern, responsive weather application built with HTML, CSS, JavaScript, and WeatherAPI.
-This project provides real-time weather updates, automatic location tracking, and a clean glass-blur UI with a live background video.
+A modern, fully responsive weather forecasting web application offering real-time updates and an immersive user experience. Built using **HTML5, CSS3, and Vanilla JavaScript (ES6)**, it utilizes the **WeatherAPI** for accurate, global weather data.
+<img width="1916" height="760" alt="image" src="https://github.com/user-attachments/assets/ee0067d7-c39f-48a2-9e51-e8b7067e601f" />
 
-🚀 Features
-✅ Real-Time Weather by User Location
+## 🚀 Features
 
-Automatically detects the user’s current GPS location using the browser’s Geolocation API.
+### 📍 1. Real-Time Location-Based Weather
+The application automatically detects the user’s current GPS location using the browser’s **Geolocation API** to fetch and display live weather data.
 
-Fetches live weather data based on latitude & longitude.
+* **Core Details:** Temperature (°C), Weather condition text, and dynamic icon.
+* **Location:** Current Country & City.
+* **Time:** Local time of the detected location.
+* **Air Conditions:** Wind speed, Humidity, Cloud cover, Pressure, UV Index, and Visibility.
+* **Astronomy:** Sunrise & sunset times.
 
-Displays:
+---
 
-Temperature
+### 🔍 2. City-Based Search
+Users can instantly get updated weather details for any city worldwide by entering the city name into the search bar. The UI auto-updates with smooth transitions upon a successful search.
 
-Weather condition
+---
 
-Wind speed
+### 🧊 3. Premium Glassmorphism UI
+The user interface is crafted with a modern glass-blur design, enhancing readability and providing a premium feel.
 
-Humidity
+* **Effect:** Main containers use the `backdrop-filter: blur(12px)` CSS property.
+* **Style:** Transparent frosted panels, soft shadows, and rounded corners.
 
-Cloud cover
+---
 
-UV Index
+### 🎬 4. Background Video Integration
+A stunning, full-screen background video provides a dynamic visual layer.
 
-Visibility
+* **Playback:** Auto-play, loop, and muted.
+* **Visual:** Softly blurs behind the glassmorphism UI elements for a cohesive look.
 
-Pressure
+---
 
-Date & time
+### 📱 5. Fully Responsive Design
+The layout is built with **Flexbox** and scalable units to ensure the application adapts beautifully and consistently across all devices: **Mobile, Tablet, and Desktop**.
 
-🔍 City-Based Weather Search
+---
 
-Users can manually enter any city to view its weather information:
+## 🛠️ Tech Stack & APIs
 
-Instant search
+| Technology | Usage |
+| :--- | :--- |
+| **HTML5** | Application structure and semantics |
+| **CSS3** | Styling, **Glassmorphism**, and layout management |
+| **JavaScript (ES6)** | API calls, DOM manipulation, and UI updates |
+| **WeatherAPI** | Provides current and forecast weather data |
+| **Geolocation API** | Detects user's current latitude and longitude |
+| **MP4 Video** | Background visual enhancement |
 
-Auto-updates all weather detail sections
+---
 
-Displays country, local time, weather status, and icons
+## ▶️ How to Run
 
-🎬 Dynamic Glass-Blur UI With Background Video
+1.  **Clone the project:**
+    ```bash
+    git clone [https://github.com/your-username/weather-app.git](https://github.com/your-username/weather-app.git)
+    ```
+2.  **Open the directory:**
+    ```bash
+    cd weather-app
+    ```
+3.  **Open `index.html`** in your preferred web browser.
 
-A modern UI built with glassmorphism:
+> **Note:** This is a pure front-end application. No backend setup or complex dependencies are required. It works instantly.
 
-Frosted glass panels
+---
 
-Soft blur using backdrop-filter
+## 🔑 API Key Setup
 
-Smooth rounded corners
+To fetch live weather data, you need an API key from **WeatherAPI**.
 
-Full-screen autoplay background video
+1.  Get your free API key from [https://www.weatherapi.com/](https://www.weatherapi.com/).
+2.  Open the `script.js` file.
+3.  Replace the placeholder `YOUR_API_KEY` with your actual key:
 
-High readability with an optional overlay
+    ```javascript
+    // script.js
 
-🌅 Sunrise & Sunset Times
+    const API_KEY = "YOUR_API_KEY"; // <-- Replace this
+    
+    // ... rest of the code
+    ```
 
-Displays accurately:
+### Example Code Snippet (Geolocation Fetch)
 
-Sunrise time
+This snippet demonstrates how the app retrieves weather data based on the user's current GPS coordinates:
 
-Sunset time
-based on the selected city or current location.
+```javascript
+navigator.geolocation.getCurrentPosition(position => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
 
-🌦️ Modern Icons for Weather Conditions
-
-Weather icons change dynamically depending on:
-
-Rain
-
-Cloud
-
-Fog
-
-Clear sky
-
-Night/day conditions
-
-📱 Fully Responsive
-
-Optimized for:
-
-Desktop
-
-Tablet
-
-Mobile
-
-All components scale smoothly with CSS flexbox.
-
-🛠️ Technologies Used
-
-HTML5
-
-CSS3 (Glassmorphism + animations)
-
-JavaScript (ES6)
-
-WeatherAPI – current & forecast endpoints
-
-Browser Geolocation API
-
-Background video (MP4)
-
-🔧 API Integration
-
-Weather data fetched from:
-
-http://api.weatherapi.com/v1/current.json
-http://api.weatherapi.com/v1/forecast.json?days=1
-
-
-Includes:
-
-Current weather
-
-Hourly weather
-
-Sunrise / sunset
-
-Local time
-
-📂 Project Structure
-/assets
-   /image  -> Icons, weather icons
-   /video  -> Background video
-index.html
-script.js
-style.css
-README.md
-
-▶️ How to Run the Project
-
-Clone the repo:
-
-git clone https://github.com/your-username/weather-app.git
-
-
-Open the project folder:
-
-cd weather-app
-
-
-Open index.html in your browser.
-
-No backend required — fully frontend-based.
-
-🔑 Environment Variables (Optional)
-
-If you want to hide your API key, create:
-
-config.js
-
-
-Inside:
-
-const API_KEY = "your-weatherapi-key";
-
-
-Then import it in your script.
-
-📌 To-Do (Future Improvements)
-
-3-day or 7-day forecast
-
-Animated weather backgrounds
-
-Dark mode toggle
-
-Save last searched city
-
-Weather alerts
-
-🤝 Contributing
-
-Fork the repo, make your changes, and submit a pull request.
-
-📸 UI Preview
-<img width="1916" height="760" alt="image" src="https://github.com/user-attachments/assets/4eeade56-cd11-4f51-877d-f738cdefabc1" />
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${lat},${lon}`;
+    
+    fetch(apiUrl)
+        .then(res => res.json())
+        .then(data => updateUI(data))
+        .catch(error => console.error("Error fetching location weather:", error));
+});
