@@ -16,7 +16,8 @@ document.getElementById("cityInput").addEventListener("keyup", function (event) 
                 document.getElementById("city_name").textContent = data.location.name;
                 document.getElementById("country").textContent = data.location.country;
                 document.getElementById("temp").textContent = data.current.temp_c;
-                document.getElementById("ontime").textContent = data.location.localtime;
+                document.getElementById("ontime").textContent = "Date And Time : " + data.location.localtime;
+
                 document.getElementById("condition-live").textContent = data.current.condition.text;
                 const iconUrl = "https:" + data.current.condition.icon;
                 document.getElementById("condition").src = iconUrl;
@@ -59,9 +60,9 @@ function success(position) {
             document.getElementById("city_name").textContent = data.location.name;
             document.getElementById("temp").textContent = data.current.temp_c + "°C";
             const iconUrl = "https:" + data.current.condition.icon;
-             document.getElementById("condition").src = iconUrl
+            document.getElementById("condition").src = iconUrl
             document.getElementById("country").textContent = data.location.country;
-            document.getElementById("ontime").textContent = data.location.localtime;
+            document.getElementById("ontime").textContent = "Date And Time : " + data.location.localtime;
             document.getElementById("condition-live").textContent = data.current.condition.text;
 
             document.getElementById("windSpeed").textContent = data.current.wind_kph;
