@@ -4,7 +4,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .navbar-section {
@@ -230,6 +230,7 @@ label {
     margin-bottom: 20px;
     font-weight: 600;
     justify-content: center;
+    margin-top: -20px;
     margin-bottom: 50px !important;
 }
 
