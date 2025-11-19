@@ -66,19 +66,12 @@ a {
     justify-content: space-between;
     gap: 40px;
     padding: 30px;
-
     background: rgba(255, 255, 255, 0.15);
-    /* transparent white */
     backdrop-filter: blur(10px);
-    /* main glass effect */
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
-
     border-radius: 20px;
-    border: 1px solid rgba(8, 7, 7, 0.3);
-    /* glass border */
+    border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    /* soft depth */
 }
 
 
