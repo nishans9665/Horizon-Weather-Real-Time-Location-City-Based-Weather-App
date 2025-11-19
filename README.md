@@ -1,7 +1,8 @@
 # 🌦️ The Horizon Weather App
 
 A modern, fully responsive weather forecasting web application offering real-time updates and an immersive user experience. Built using **HTML5, CSS3, and Vanilla JavaScript (ES6)**, it utilizes the **WeatherAPI** for accurate, global weather data.
-<img width="1916" height="760" alt="image" src="https://github.com/user-attachments/assets/ee0067d7-c39f-48a2-9e51-e8b7067e601f" />
+<img width="1917" height="1060" alt="Screenshot 2025-11-19 220237" src="https://github.com/user-attachments/assets/19b35a7f-3cf4-43b9-8c55-751b8960140b" />
+
 
 ## 🚀 Features
 
